@@ -1,0 +1,31 @@
+<%- include('../partials/header') %>
+
+<div class="container">
+
+    <div class="jumbotron">
+        <h1><i class="fas fa-code"></i>  bugDebug</h1>
+        <p><em>a c-ommunity for developers</em></p>
+        <a class="btn btn-lg btn-primary" href="/post/add">Ask a question</a>
+    </div>
+    
+    <div class="row"">
+        <% posts.forEach(post=>{ %>
+            <div class="col-md-12">
+                <div class="card">
+                    <a href="post/<%= post._id %>">
+                        <h4> <%= post.title %> </h4> 
+                    </a>
+                    
+                    <p> <%- post.content.substring(0,50) %>... </p>
+
+                    <a href="post/<%= post._id %>">
+                        <div> <%= post.comments.length %> answers >> </div> 
+                    </a>
+
+                </div>
+            </div>
+        <% }) %>        
+    </div>
+</div>
+
+<%- include('../partials/footer') %>

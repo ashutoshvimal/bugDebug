@@ -1,0 +1,34 @@
+.container{
+    margin: 20px 50px;
+}
+.jumbotron {
+    padding: 2rem 1rem;
+    margin-bottom: 2rem;
+    background-color: #e9ecef;
+    border-radius: .3rem;
+}
+h1{
+    font-size: 2em;
+}
+.inlineForm{
+    display: inline;
+}
+.card{
+    margin: 30px;
+    padding: 10px;
+    box-shadow:5px 5px 5px 0  #C6C6C6;
+}
+input{
+    margin: 10px;
+}
+
+.show-container{
+    width: 50%;
+    margin-top: 30px;
+    padding: 20px;
+    border: 1px solid black;
+}
+.alert{
+    margin: 0;
+    padding: 4px;
+}
